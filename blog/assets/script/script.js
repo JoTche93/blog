@@ -1,21 +1,23 @@
-
-document.querySelector("form").addEventListener("submit", function(e) {
-    const titulo = document.querySelector("input[name='titulo']").value.trim();
-    const contenido = document.querySelector("textarea[name='contenido']").value.trim();
-
-    if (!titulo || !contenido) {
-        e.preventDefault();
-        alert("Por favor, completa todos los campos.");
-    }
-});
-
 document.addEventListener('DOMContentLoaded', function() {
+    const formCrearPost = document.getElementById('formCrearPost');
+
+    if (formCrearPost) {
+        formCrearPost.addEventListener("submit", function(e) {
+            const titulo = formCrearPost.querySelector("input[name='titulo']").value.trim();
+            const contenido = formCrearPost.querySelector("textarea[name='contenido']").value.trim();
+
+            if (!titulo || !contenido) {
+                e.preventDefault();
+                alert("Por favor, completa todos los campos.");
+            }
+        });
+    }
+
     const modoEvaBtn = document.getElementById('modoEva02');
     const logo = document.getElementById('logoImg');
 
     if (modoEvaBtn && logo) {
         modoEvaBtn.addEventListener('click', function() {
-            // Cambiar entre modos
             if (document.body.classList.contains('modo-eva02')) {
                 document.body.classList.remove('modo-eva02');
                 document.body.classList.add('modo-eva01');
@@ -30,7 +32,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-
-
-
