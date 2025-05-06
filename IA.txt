@@ -1,0 +1,5 @@
+Para este taller utilice chat GPT, donde le pedi ayuda con los comentarios para el codigo, junto con una pequeña optimizacion del mismo,
+tambien lo use para poder visualizar mejor y de manera mas rapida los errores que surgian mientras iba construyendo el sitio del blog
+errores que a simple vista me costaba ver por mi mismo o para recibir sugerencias que podrian servirme tanto en la estructura como el 
+funcionamiento del sitio, temas como el estilo fueron netamente por parte de mi imaginacion, utilice la ia para ciertos temas que no 
+recoradba del todo su funcionamiento. 
